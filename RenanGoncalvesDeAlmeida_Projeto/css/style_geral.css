@@ -1,0 +1,124 @@
+body {
+  background-color: rgb(19, 18, 18);
+  padding: 0px;
+  margin: 0px;
+}
+
+#conteudo {
+    margin: 40px var(--espacamento-content);
+    padding: 20px;
+    border: 1px solid rgb(109, 105, 105);
+    display: none;
+    background-color: #6d6d6d;
+    color: #fff;
+  }
+  
+  #conteudoHome {
+    margin: 40px var(--espacamento-content);
+    padding: 20px;
+    border: 1px solid rgb(109, 105, 105);
+    background-color: #6d6d6d;
+    color: #fff;
+  }
+  
+  #conteudoHome h1 {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.linksContato {
+  list-style: none;
+
+  display: flex;
+
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+#conteudoHome a {
+  padding: 5px 40px;
+  margin-right: 20px;
+  display: inline-block;
+
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+
+  /* visual do link */
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#linkedin {
+  background-color: #0e76a8;
+}
+
+#instagram {
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#facebook {
+  background-color: #3b5998;
+}
+
+#github {
+  background-color: #171515;
+}
+
+#conteudoHome h3 {
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .linksContato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  li a {
+    width: 100%;
+    height: 50px;
+  }
+  #conteudoHome a {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  #conteudoHome,
+  #conteudo {
+    margin: 0;
+  }
+  #conteudoHome h1 {
+    width: auto;
+  }
+}

@@ -1,0 +1,10 @@
+.conteudoPessoal p {
+    font-family: 'Noto Sans', sans-serif;
+}
+h1, h3 {
+    background-color: rgb(75, 73, 73);
+    padding: 5px
+}
+.objetivos  {
+    margin-left: 20px;
+}
