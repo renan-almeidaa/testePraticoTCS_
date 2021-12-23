@@ -36,4 +36,5 @@ function valida_form (){
         document.getElementById("mail").focus();
         return false;
     }
+    console.log("passou aqui")
 }
