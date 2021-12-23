@@ -5,8 +5,8 @@ var lastPag = "home";
 //carrega a página na tela
 function carregar(pagina){
     $("#conteudo").load(pagina)
-    $('#conteudo').show();
     $('#conteudoHome').hide();
+    $('#conteudo').show();
     focoMenu(pagina)
 }
 
