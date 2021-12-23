@@ -1,4 +1,6 @@
-var lastPag = "home"
+var lastPag = "home";
+
+
 
 //carrega a página na tela
 function carregar(pagina){
@@ -22,4 +24,16 @@ function focoMenu(pagina){
     let elLast = document.getElementById(lastPag)
     elLast.classList.remove('selected')
     lastPag = menu_selected
+}
+
+function valida_form (){
+    if(document.getElementById("name").value == ""){
+    alert('Por favor, preencha o campo nome');
+    document.getElementById("name").focus();
+    return false;
+    } else if(document.getElementById("mail").value == ""){
+        alert('Por favor, preencha o campo email');
+        document.getElementById("mail").focus();
+        return false;
+    }
 }
